@@ -31,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:RadarProject
 LIBS:Radar-cache
 EELAYER 25 0
 EELAYER END
