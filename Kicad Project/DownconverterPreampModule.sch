@@ -113,12 +113,6 @@ F 3 "" H 4550 4300 50  0001 C CNN
 	1    4550 4300
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3200 4800 3200 4300
-Wire Wire Line
-	3200 4300 4400 4300
-Wire Wire Line
-	4700 4300 5100 4300
 $Comp
 L C C?
 U 1 1 59F4B433
@@ -130,16 +124,6 @@ F 3 "" H 4950 4650 50  0001 C CNN
 	1    4950 4650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 4500 4950 4300
-Connection ~ 4950 4300
-Wire Wire Line
-	4950 4800 4950 5050
-Wire Wire Line
-	5100 3000 5100 4000
-Wire Wire Line
-	5100 3000 6500 3000
-Connection ~ 5100 3700
 $Comp
 L LMV751 U?
 U 1 1 59F4B5E2
@@ -151,18 +135,10 @@ F 3 "" H 8400 2700 60  0001 C CNN
 	1    8400 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6800 3000 7800 3000
 Text Notes 2250 5400 0    60   ~ 0
 INPUT
 Text Notes 7350 2400 0    60   ~ 0
 OUTPUT
-Wire Wire Line
-	6300 3700 9850 3700
-Wire Wire Line
-	9850 3700 9850 2400
-Wire Wire Line
-	9850 2400 9000 2400
 $Comp
 L GND #PWR?
 U 1 1 59F7C7AA
@@ -174,6 +150,32 @@ F 3 "" H 7600 4950 50  0001 C CNN
 	1    7600 4950
 	1    0    0    -1  
 $EndComp
+Text Notes 3900 5400 0    60   ~ 0
+Gali-1+
+Wire Wire Line
+	3200 4800 3200 4300
+Wire Wire Line
+	3200 4300 4400 4300
+Wire Wire Line
+	4700 4300 5100 4300
+Wire Wire Line
+	4950 4500 4950 4300
+Connection ~ 4950 4300
+Wire Wire Line
+	4950 4800 4950 5050
+Wire Wire Line
+	5100 3000 5100 4000
+Wire Wire Line
+	5100 3000 6500 3000
+Connection ~ 5100 3700
+Wire Wire Line
+	6800 3000 7800 3000
+Wire Wire Line
+	6300 3700 9850 3700
+Wire Wire Line
+	9850 3700 9850 2400
+Wire Wire Line
+	9850 2400 9000 2400
 Wire Wire Line
 	7600 2700 7600 4950
 Connection ~ 7600 4300
@@ -181,4 +183,12 @@ Wire Wire Line
 	7600 4300 6300 4300
 Wire Wire Line
 	7600 2700 7800 2700
+Wire Wire Line
+	7800 2400 7800 1850
+Wire Wire Line
+	7800 1850 9150 1850
+Wire Wire Line
+	9150 1850 9150 3000
+Wire Wire Line
+	9150 3000 9000 3000
 $EndSCHEMATC
