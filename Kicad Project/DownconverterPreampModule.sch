@@ -153,4 +153,6 @@ F 3 "" H 8400 2700 60  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 3000 7800 3000
+Text Notes 4000 2100 0    60   ~ 0
+This is a change.
 $EndSCHEMATC
