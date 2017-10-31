@@ -49,4 +49,8 @@ Comment4 ""
 $EndDescr
 Text Notes 7200 5950 0    60   ~ 0
 Hello world
+Text HLabel 2350 2650 0    60   Input ~ 0
+transmit_in
+Text HLabel 2350 3050 0    60   Input ~ 0
+receive_out
 $EndSCHEMATC
