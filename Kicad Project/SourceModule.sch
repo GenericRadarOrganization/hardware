@@ -92,17 +92,11 @@ F 3 "" H 4100 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3600 2650 4100 2650
+	3600 2650 4300 2650
 Wire Wire Line
-	4100 2650 4300 2650
+	4100 2850 4100 2600
 Wire Wire Line
-	4100 2850 4100 2650
-Wire Wire Line
-	4100 2650 4100 2600
-Wire Wire Line
-	3600 2850 3900 2850
-Wire Wire Line
-	3900 2850 4100 2850
+	3600 2850 4100 2850
 Connection ~ 4100 2650
 $Comp
 L C C?
@@ -310,9 +304,7 @@ $EndComp
 Wire Wire Line
 	5150 2850 5150 3700
 Wire Wire Line
-	5300 2750 5300 2850
-Wire Wire Line
-	5300 2850 5300 3000
+	5300 2750 5300 3000
 Wire Wire Line
 	5300 2850 5150 2850
 Connection ~ 5300 2850
@@ -328,12 +320,12 @@ F 3 "" H 5300 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 2250 5300 2250
-Wire Wire Line
-	5300 2250 5500 2250
+	5100 2250 5500 2250
 Wire Wire Line
 	5300 2450 5300 2250
 Connection ~ 5300 2250
 Wire Wire Line
 	4350 2250 4800 2250
+Text Notes 5100 2050 0    60   ~ 0
+Resistive divider
 $EndSCHEMATC
