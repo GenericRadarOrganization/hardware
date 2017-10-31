@@ -1,0 +1,24 @@
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="FinalProject_lib:Resistive Divider:schematic"
+R:R1  N__0 N__5 R=5 Ohm Noise=yes 
+R:R2  N__5 N__2 R=5 Ohm Noise=yes 
+R:R3  N__5 N__12 R=222 Ohm Noise=yes 
+R:R4  N__12 0 R=62 Ohm Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=3 GHz Stop=9 GHz Step=.1 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Port:Term1  N__0 0 Num=1 Z=50 Ohm Noise=yes 
+Port:Term2  N__2 0 Num=2 Z=50 Ohm Noise=yes 
+Port:Term3  N__12 0 Num=3 Z=50 Ohm Noise=yes 
+model MSub1 MSUB H=60 mil Er=4.6 Mur=1 Cond=1.0E+50 Hu=3.9e+034 mil T=1.4 mil TanD=.01 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 

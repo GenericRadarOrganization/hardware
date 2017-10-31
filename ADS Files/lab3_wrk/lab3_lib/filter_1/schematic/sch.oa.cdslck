@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      damianl
+HostName                       E3071-01-0504.engg.ksu.edu
+ProcessIdentifier              7824
+ProcessCreationTime_UTC        1507665257
+ProcessCreationTime_Readable   10/10/17 14:54:17 Central Daylight Time
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         H:\ECE 764\Lab 3\lab3_wrk\lab3_lib\filter_1\schematic\sch.oa.cdslck
+TimeEditLocked                 10/10/17 15:02:35 Central Daylight Time
