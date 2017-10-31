@@ -1,0 +1,12 @@
+create_item("DA_WDCoupler_PowerDivider","Wilkinson Power Divider","DA_WDCoupler",16,-1,"WDCoupler.bmp","Component Parameters",NULL,"%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","DA_WDCoupler_PowerDivider","%t%b%r%38?%:\n%39?all_parm%A%:%30?%s%:%k%?[%1i]%;=%s%;%;%;%e%e%;","WDCoupler",3,NULL,0,
+create_parm("Subst","Substrate Instance Name",262144,"StringAndReferenceFormSet",-2,prm("StringAndReference","\"MSub1\"")),
+create_parm("F","Center Frequency",65536,"StdFormSet",0,prm("StdForm","1 GHz")),
+create_parm("DeltaF","Total Frequency Bandwidth",65536,"StdFormSet",0,prm("StdForm","0.5 GHz")),
+create_parm("Zo","Characteristic Impedance",65536,"StdFormSet",1,prm("StdForm","50 Ohm")),
+create_parm("ResponseType","Type of Frequency Response",134656,"DA_QWFormSet",-1,prm("DA_UniformForm")),
+create_parm("N","Number of Quarter-Wave Sections (set N=0 to compute N)",131072,"StdFormSet",-1,prm("StdForm","0")),
+create_parm("Rmax","Maximum Voltage Reflection Coefficient on Input",68608,"StdFormSet",-1,prm("StdForm","0.1")),
+create_parm("K","Ratio of Power Out Port 2 to Power Out Port 3 (Valid for N=1 Only)",66048,"StdFormSet",-1,prm("StdForm","1.0")),
+create_parm("Wgap","Width of Gap for Resistor",66048,"StdFormSet",5,prm("StdForm","50 mil"),
+    list(dm_create_cb(PARM_DEFAULT_VALUE_CB,"get_default_length_value_cb","50",TRUE))),
+create_parm("Delta","Length Added to Branches for Tuning",65536,"StdFormSet",5,prm("StdForm","0")));
