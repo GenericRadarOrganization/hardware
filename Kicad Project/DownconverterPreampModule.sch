@@ -153,6 +153,32 @@ F 3 "" H 8400 2700 60  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 3000 7800 3000
-Text Notes 4000 2100 0    60   ~ 0
-This is a change.
+Text Notes 2250 5400 0    60   ~ 0
+INPUT
+Text Notes 7350 2400 0    60   ~ 0
+OUTPUT
+Wire Wire Line
+	6300 3700 9850 3700
+Wire Wire Line
+	9850 3700 9850 2400
+Wire Wire Line
+	9850 2400 9000 2400
+$Comp
+L GND #PWR?
+U 1 1 59F7C7AA
+P 7600 4950
+F 0 "#PWR?" H 7600 4700 50  0001 C CNN
+F 1 "GND" H 7600 4800 50  0000 C CNN
+F 2 "" H 7600 4950 50  0001 C CNN
+F 3 "" H 7600 4950 50  0001 C CNN
+	1    7600 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2700 7600 4950
+Connection ~ 7600 4300
+Wire Wire Line
+	7600 4300 6300 4300
+Wire Wire Line
+	7600 2700 7800 2700
 $EndSCHEMATC
