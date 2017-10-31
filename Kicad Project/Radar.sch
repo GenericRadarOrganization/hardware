@@ -58,6 +58,8 @@ S 8700 2400 3200 4850
 U 59EFF5D2
 F0 "TXRX Module" 60
 F1 "TXRX Module.sch" 60
+F2 "transmit_in" I L 8700 3200 60 
+F3 "receive_out" I L 8700 4350 60 
 $EndSheet
 $Sheet
 S 4450 5150 2600 2000
