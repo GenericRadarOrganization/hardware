@@ -72,12 +72,12 @@ $EndComp
 $Comp
 L PowerDivider MS?
 U 1 1 59F143BD
-P 9050 5550
-F 0 "MS?" H 9460 6100 60  0000 C CNN
-F 1 "PowerDivider" H 8840 6100 60  0000 C CNN
-F 2 "" H 9050 5550 60  0001 C CNN
-F 3 "" H 9050 5550 60  0001 C CNN
-	1    9050 5550
+P 7850 5550
+F 0 "MS?" H 8260 6100 60  0000 C CNN
+F 1 "PowerDivider" H 7640 6100 60  0000 C CNN
+F 2 "" H 7850 5550 60  0001 C CNN
+F 3 "" H 7850 5550 60  0001 C CNN
+	1    7850 5550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -196,17 +196,15 @@ Wire Wire Line
 	1050 1350 1050 1500
 Wire Wire Line
 	700  2200 1500 2200
-Wire Wire Line
-	2900 2200 3350 2200
 $Comp
 L C .1uF
 U 1 1 59F4AD70
-P 3500 2200
-F 0 ".1uF" H 3525 2300 50  0000 L CNN
-F 1 "C" H 3525 2100 50  0000 L CNN
-F 2 "" H 3538 2050 50  0001 C CNN
-F 3 "" H 3500 2200 50  0001 C CNN
-	1    3500 2200
+P 3400 2200
+F 0 ".1uF" H 3425 2300 50  0000 L CNN
+F 1 "C" H 3425 2100 50  0000 L CNN
+F 2 "" H 3438 2050 50  0001 C CNN
+F 3 "" H 3400 2200 50  0001 C CNN
+	1    3400 2200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -228,15 +226,15 @@ Text Notes 650  2150 0    60   ~ 0
 Teensy Control
 Text Notes 2050 1100 0    60   ~ 0
 Voltage Controlled Oscillator\n
-Text Notes 4400 2050 0    60   ~ 0
+Text Notes 4100 1550 0    60   ~ 0
 Amplifier
 Text Notes 6800 1500 0    60   ~ 0
 Frequency Multiplier
-Text Notes 8600 4800 0    60   ~ 0
+Text Notes 7550 4750 0    60   ~ 0
 Power Splitter
-Text Notes 9600 5650 0    60   ~ 0
+Text Notes 8550 6050 0    60   ~ 0
 To Premp\nFrequency Multiplier
-Text Notes 9650 5100 0    60   ~ 0
+Text Notes 8650 5100 0    60   ~ 0
 To TX/RX multiplier
 Wire Wire Line
 	2100 3650 5850 3650
@@ -253,9 +251,9 @@ F 3 "" H 7300 2900 50  0001 C CNN
 	1    7300 2900
 	1    0    0    -1  
 $EndComp
-Text Notes 10000 4850 0    60   ~ 0
+Text Notes 8650 5600 0    60   ~ 0
 0dBm\n
-Text Notes 3600 2050 0    60   ~ 0
+Text Notes 3350 2050 0    60   ~ 0
 -3dBm
 $Comp
 L R R?
@@ -324,12 +322,249 @@ Wire Wire Line
 Wire Wire Line
 	6000 2400 6000 2200
 Connection ~ 6000 2200
-Wire Wire Line
-	5050 2200 5500 2200
 Text Notes 5650 2100 0    60   ~ 0
 Resistive divider
-Text Notes 9100 1950 0    60   ~ 0
-Amplifier
 Wire Wire Line
 	6500 2200 6600 2200
+$Comp
+L GALI-2+ U?
+U 1 1 59F9E96F
+P 4400 2200
+F 0 "U?" H 4800 2750 60  0000 C CNN
+F 1 "GALI-2+" H 4100 2750 60  0000 C CNN
+F 2 "" H 4400 2200 60  0001 C CNN
+F 3 "" H 4400 2200 60  0001 C CNN
+	1    4400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F9EB1B
+P 4400 2650
+F 0 "#PWR?" H 4400 2400 50  0001 C CNN
+F 1 "GND" H 4400 2500 50  0000 C CNN
+F 2 "" H 4400 2650 50  0001 C CNN
+F 3 "" H 4400 2650 50  0001 C CNN
+	1    4400 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C .1uF
+U 1 1 59F9EBC1
+P 5350 2200
+F 0 ".1uF" H 5375 2300 50  0000 L CNN
+F 1 "C" H 5375 2100 50  0000 L CNN
+F 2 "" H 5388 2050 50  0001 C CNN
+F 3 "" H 5350 2200 50  0001 C CNN
+	1    5350 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 2200 3250 2200
+Wire Wire Line
+	3550 2200 3700 2200
+Wire Wire Line
+	5100 2200 5200 2200
+Wire Wire Line
+	5150 1300 5250 1300
+Connection ~ 5150 2200
+$Comp
+L R R?
+U 1 1 59F9EE94
+P 5400 1300
+F 0 "R?" V 5480 1300 50  0000 C CNN
+F 1 "75" V 5400 1300 50  0000 C CNN
+F 2 "" V 5330 1300 50  0001 C CNN
+F 3 "" H 5400 1300 50  0001 C CNN
+	1    5400 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 1300 5800 1300
+Wire Wire Line
+	5800 1300 5800 1150
+$Comp
+L +9V #PWR?
+U 1 1 59F9EF36
+P 5800 1150
+F 0 "#PWR?" H 5800 1000 50  0001 C CNN
+F 1 "+9V" H 5800 1290 50  0000 C CNN
+F 2 "" H 5800 1150 50  0001 C CNN
+F 3 "" H 5800 1150 50  0001 C CNN
+	1    5800 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F9EFD4
+P 5600 1750
+F 0 "#PWR?" H 5600 1500 50  0001 C CNN
+F 1 "GND" H 5600 1600 50  0000 C CNN
+F 2 "" H 5600 1750 50  0001 C CNN
+F 3 "" H 5600 1750 50  0001 C CNN
+	1    5600 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 59F9F012
+P 5300 1700
+F 0 "C?" H 5325 1800 50  0000 L CNN
+F 1 "C" H 5325 1600 50  0000 L CNN
+F 2 "" H 5338 1550 50  0001 C CNN
+F 3 "" H 5300 1700 50  0001 C CNN
+	1    5300 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 1700 5600 1700
+Wire Wire Line
+	5600 1700 5600 1750
+Text Notes 4750 1950 0    60   ~ 0
+lamda/4\n
+Text Notes 8650 1550 0    60   ~ 0
+Amplifier
+$Comp
+L GALI-2+ U?
+U 1 1 59F9F422
+P 9000 2200
+F 0 "U?" H 9400 2750 60  0000 C CNN
+F 1 "GALI-2+" H 8700 2750 60  0000 C CNN
+F 2 "" H 9000 2200 60  0001 C CNN
+F 3 "" H 9000 2200 60  0001 C CNN
+	1    9000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1300 9800 1300
+$Comp
+L R R?
+U 1 1 59F9F42A
+P 9950 1300
+F 0 "R?" V 10030 1300 50  0000 C CNN
+F 1 "75" V 9950 1300 50  0000 C CNN
+F 2 "" V 9880 1300 50  0001 C CNN
+F 3 "" H 9950 1300 50  0001 C CNN
+	1    9950 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10100 1300 10350 1300
+Wire Wire Line
+	10350 1300 10350 1150
+$Comp
+L +9V #PWR?
+U 1 1 59F9F432
+P 10350 1150
+F 0 "#PWR?" H 10350 1000 50  0001 C CNN
+F 1 "+9V" H 10350 1290 50  0000 C CNN
+F 2 "" H 10350 1150 50  0001 C CNN
+F 3 "" H 10350 1150 50  0001 C CNN
+	1    10350 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F9F438
+P 10150 1750
+F 0 "#PWR?" H 10150 1500 50  0001 C CNN
+F 1 "GND" H 10150 1600 50  0000 C CNN
+F 2 "" H 10150 1750 50  0001 C CNN
+F 3 "" H 10150 1750 50  0001 C CNN
+	1    10150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 59F9F43E
+P 9850 1700
+F 0 "C?" H 9875 1800 50  0000 L CNN
+F 1 "C" H 9875 1600 50  0000 L CNN
+F 2 "" H 9888 1550 50  0001 C CNN
+F 3 "" H 9850 1700 50  0001 C CNN
+	1    9850 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10000 1700 10150 1700
+Wire Wire Line
+	10150 1700 10150 1750
+Text Notes 9300 1950 0    60   ~ 0
+lamda/4\n
+$Comp
+L C .1uF?
+U 1 1 59F9F5E3
+P 8150 2200
+F 0 ".1uF?" H 8175 2300 50  0000 L CNN
+F 1 "C" H 8175 2100 50  0000 L CNN
+F 2 "" H 8188 2050 50  0001 C CNN
+F 3 "" H 8150 2200 50  0001 C CNN
+	1    8150 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F9F88B
+P 9000 2650
+F 0 "#PWR?" H 9000 2400 50  0001 C CNN
+F 1 "GND" H 9000 2500 50  0000 C CNN
+F 2 "" H 9000 2650 50  0001 C CNN
+F 3 "" H 9000 2650 50  0001 C CNN
+	1    9000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C .1uF?
+U 1 1 59F9F8E3
+P 10050 2200
+F 0 ".1uF?" H 10075 2300 50  0000 L CNN
+F 1 "C" H 10075 2100 50  0000 L CNN
+F 2 "" H 10088 2050 50  0001 C CNN
+F 3 "" H 10050 2200 50  0001 C CNN
+	1    10050 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 2200 9900 2200
+Wire Wire Line
+	10200 2200 10350 2200
+Wire Wire Line
+	10350 2200 10350 3950
+Wire Wire Line
+	10350 3950 6800 3950
+Wire Wire Line
+	6800 3950 6800 5550
+Wire Wire Line
+	6800 5550 7150 5550
+Text Notes 6350 5400 0    60   ~ 0
+4 dBM\n
+Text Notes 8000 1900 0    60   ~ 0
+Filter?\n
+$Comp
+L R R?
+U 1 1 59FA0D74
+P 5150 2050
+F 0 "R?" V 5230 2050 50  0000 C CNN
+F 1 "75" V 5150 2050 50  0000 C CNN
+F 2 "" V 5080 2050 50  0001 C CNN
+F 3 "" H 5150 2050 50  0001 C CNN
+	1    5150 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5150 1300 5150 1900
+Connection ~ 5150 1700
+$Comp
+L R R?
+U 1 1 59FA127F
+P 9700 2050
+F 0 "R?" V 9780 2050 50  0000 C CNN
+F 1 "75" V 9700 2050 50  0000 C CNN
+F 2 "" V 9630 2050 50  0001 C CNN
+F 3 "" H 9700 2050 50  0001 C CNN
+	1    9700 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9700 1300 9700 1900
 $EndSCHEMATC
