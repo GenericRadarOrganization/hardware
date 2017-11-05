@@ -1,10 +1,19 @@
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="lab3_lib:filterAmp_1:schematic"
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="lab3_lib:filter_2_5.8:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Port:Term1  N__14 0 Num=1 Z=50 Ohm Noise=yes 
+Port:Term2  N__2 0 Num=2 Z=50 Ohm Noise=yes 
+MCFIL:CLin1  N__8 N__4 Subst="MSub1" W=100 mil S=S mil L=L4a mil 
+MLOC2:TL1  N__6 Subst="MSub1" W=100 mil L=L4b mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLOC2:TL2  N__7 Subst="MSub1" W=100 mil L=L4b mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MTEE_ADS:Tee1  N__7 N__8 N__0 Subst="MSub1" W1=100 mil W2=100 mil W3=100 mil 
+MTEE_ADS:Tee2  N__6 N__4 N__15 Subst="MSub1" W1=100 mil W2=100 mil W3=100 mil 
+MLIN2:TL4  N__15 N__2 Subst="MSub1" W=100 mil L=1000 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL3  N__14 N__0 Subst="MSub1" W=100 mil L=1000 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 model MSub1 MSUB H=60 mil Er=4.6 Mur=1 Cond=1.0E+50 Hu=3.9e+034 mil T=1.4 mil TanD=.01 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
 S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
 
-SweepPlan: SP1_stim Start=100 MHz Stop=12.0 GHz Step=10 MHz 
+SweepPlan: SP1_stim Start=100 MHz Stop=15 GHz Step=10 MHz 
 
 OutputPlan:SP1_Output \
       Type="Output" \
@@ -15,27 +24,10 @@ OutputPlan:SP1_Output \
 
 #load "python","LinearCollapse"
 Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
-Port:Term2  N__5 0 Num=2 Z=50 Ohm Noise=yes 
-#uselib "ckt" , "S2P"
-S2P:SNP1  N__0 N__1 0 File="H:\ECE 764\Lab 3\LEE-39+___35mA___Plus25degC.S2P" Type="touchstone" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 
-MLIN2:TL1  N__8 N__4 Subst="MSub1" W=100 mil L=66 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-C:C3  N__7 N__5 C=180 pF 
-C:C1  N__17 N__4 C=180 pF 
-VIAGND:V1  N__17 Subst="MSub1" D=15.0 mil T=0.15 mil Rho=1.0 W=25.0 mil 
-MTEE_ADS:Tee3  N__7 N__1 N__8 Subst="MSub1" W1=100 mil W2=100 mil W3=100 mil 
-C:C2  N__14 N__0 C=180 pF 
-MCFIL:CLin1  N__10 N__11 Subst="MSub1" W=100 mil S=S mil L=L4a mil 
-MLOC2:TL2  N__13 Subst="MSub1" W=100 mil L=L4b mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLOC2:TL3  N__12 Subst="MSub1" W=100 mil L=L4b mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MTEE_ADS:Tee2  N__12 N__11 N__16 Subst="MSub1" W1=100 mil W2=100 mil W3=100 mil 
-MTEE_ADS:Tee1  N__13 N__10 N__9 Subst="MSub1" W1=100 mil W2=100 mil W3=100 mil 
-MLIN2:TL4  N__16 N__14 Subst="MSub1" W=100 mil L=200 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLIN2:TL5  N__19 N__9 Subst="MSub1" W=100 mil L=1000 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-Port:Term1  N__19 0 Num=1 Z=50 Ohm Noise=yes 
 
-L=513.8224 tune{ 292.92 to 878.76 by 1 }
-D=22 tune{ 5 to 50 by 1 }
-S=42 tune{ 2 to 100 by 2.5 }
+L=952.44 tune{ 100 to 1500 by 1 }
+D=19.2 tune{ 5 to 50 by 1 }
+S=50.02 tune{ 2 to 100 by 2.5 }
 L4=L/4
 LD=L/D
 L4a=L4+LD
