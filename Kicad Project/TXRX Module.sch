@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Radar-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -200,8 +199,6 @@ Wire Wire Line
 Wire Wire Line
 	4950 1650 5350 1650
 Connection ~ 4950 2100
-Wire Wire Line
-	8100 2650 7250 2650
 $Comp
 L R R17
 U 1 1 59FFE442
@@ -268,8 +265,6 @@ F 3 "" H 5450 2200 50  0001 C CNN
 	1    5450 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 4800 6400 4800
 Wire Wire Line
 	2850 4800 3150 4800
 Wire Wire Line
@@ -354,4 +349,82 @@ F 3 "" H 6700 5750 60  0001 C CNN
 	1    6700 5750
 	-1   0    0    -1  
 $EndComp
+$Comp
+L R 0ohms
+U 1 1 5A03279B
+P 7200 4800
+F 0 "0ohms" V 7280 4800 50  0000 C CNN
+F 1 "R" V 7200 4800 50  0000 C CNN
+F 2 "" V 7130 4800 50  0001 C CNN
+F 3 "" H 7200 4800 50  0001 C CNN
+	1    7200 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L R 0ohms
+U 1 1 5A032888
+P 7700 2650
+F 0 "0ohms" V 7780 2650 50  0000 C CNN
+F 1 "R" V 7700 2650 50  0000 C CNN
+F 2 "" V 7630 2650 50  0001 C CNN
+F 3 "" H 7700 2650 50  0001 C CNN
+	1    7700 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 4800 7350 4800
+Wire Wire Line
+	6400 4800 7050 4800
+Wire Wire Line
+	7550 2650 7250 2650
+Wire Wire Line
+	8100 2650 7850 2650
+$Comp
+L ufl U?
+U 1 1 5A0330EA
+P 7850 3350
+F 0 "U?" H 7850 3350 60  0000 C CNN
+F 1 "ufl" H 7850 3350 60  0000 C CNN
+F 2 "" H 7850 3350 60  0001 C CNN
+F 3 "" H 7850 3350 60  0001 C CNN
+	1    7850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L ufl U?
+U 1 1 5A0331E6
+P 7550 5650
+F 0 "U?" H 7550 5650 60  0000 C CNN
+F 1 "ufl" H 7550 5650 60  0000 C CNN
+F 2 "" H 7550 5650 60  0001 C CNN
+F 3 "" H 7550 5650 60  0001 C CNN
+	1    7550 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A03325F
+P 8250 3500
+F 0 "#PWR?" H 8250 3250 50  0001 C CNN
+F 1 "GND" H 8250 3350 50  0000 C CNN
+F 2 "" H 8250 3500 50  0001 C CNN
+F 3 "" H 8250 3500 50  0001 C CNN
+	1    8250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A03329B
+P 7950 5800
+F 0 "#PWR?" H 7950 5550 50  0001 C CNN
+F 1 "GND" H 7950 5650 50  0000 C CNN
+F 2 "" H 7950 5800 50  0001 C CNN
+F 3 "" H 7950 5800 50  0001 C CNN
+	1    7950 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5800 7950 5750
+Wire Wire Line
+	8250 3500 8250 3450
 $EndSCHEMATC
