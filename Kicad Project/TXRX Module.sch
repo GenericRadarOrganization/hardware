@@ -98,9 +98,9 @@ $Comp
 L BandpassFilter U11
 U 1 1 59FF71CB
 P 5650 3600
-F 0 "U11" H 5650 3600 60  0000 C CNN
-F 1 "BandpassFilter" H 5650 3600 60  0000 C CNN
-F 2 "" H 5650 3600 60  0001 C CNN
+F 0 "U11" H 7000 5100 60  0000 C CNN
+F 1 "BandpassFilter" H 6450 5000 60  0000 C CNN
+F 2 "RadarComponents:DoubleFilter" H 5650 3600 60  0001 C CNN
 F 3 "" H 5650 3600 60  0001 C CNN
 	1    5650 3600
 	1    0    0    -1  
@@ -325,17 +325,6 @@ Wire Wire Line
 Wire Wire Line
 	5750 1650 5750 1500
 $Comp
-L BandpassFilterRx U3
-U 1 1 5A012078
-P 6700 5750
-F 0 "U3" H 6700 5750 60  0000 C CNN
-F 1 "BandpassFilterRx" H 7250 6100 60  0000 C CNN
-F 2 "" H 6700 5750 60  0001 C CNN
-F 3 "" H 6700 5750 60  0001 C CNN
-	1    6700 5750
-	-1   0    0    -1  
-$EndComp
-$Comp
 L C C4
 U 1 1 5A012959
 P 4800 4800
@@ -354,4 +343,15 @@ Text GLabel 2350 2650 0    60   Input ~ 0
 PowerSplitter
 Text GLabel 2350 4800 0    60   Input ~ 0
 RFIN
+$Comp
+L BandpassFilter U3
+U 1 1 5A02863C
+P 6700 5750
+F 0 "U3" H 8000 7200 60  0000 C CNN
+F 1 "BandpassFilter" H 7550 7200 60  0000 C CNN
+F 2 "RadarComponents:QuadPoleFilter" H 6700 5750 60  0001 C CNN
+F 3 "" H 6700 5750 60  0001 C CNN
+	1    6700 5750
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

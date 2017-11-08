@@ -76,7 +76,7 @@ U 1 1 59F143BD
 P 7850 5550
 F 0 "MS1" H 8260 6100 60  0000 C CNN
 F 1 "PowerDivider" H 7640 6100 60  0000 C CNN
-F 2 "" H 7850 5550 60  0001 C CNN
+F 2 "RadarComponents:powersplitter2" H 7850 5550 60  0001 C CNN
 F 3 "" H 7850 5550 60  0001 C CNN
 	1    7850 5550
 	1    0    0    -1  
@@ -587,8 +587,6 @@ Filter
 Wire Wire Line
 	8200 2200 8200 2050
 Connection ~ 8200 2200
-Text GLabel 10700 3850 2    60   Input ~ 0
-PowerSplitter
 $Comp
 L Conn_01x02 J4
 U 1 1 5A02698C
@@ -703,4 +701,10 @@ Wire Wire Line
 	2050 4300 2350 4300
 Wire Wire Line
 	2050 4750 2400 4750
+Wire Wire Line
+	6800 5550 7150 5550
+Text GLabel 8550 5300 2    60   Input ~ 0
+PowerSplitter
+Text GLabel 8550 5800 2    60   Input ~ 0
+PowerSplitter
 $EndSCHEMATC
