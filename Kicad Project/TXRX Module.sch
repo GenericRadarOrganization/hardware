@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Radar-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -200,8 +199,6 @@ Wire Wire Line
 Wire Wire Line
 	4950 1650 5350 1650
 Connection ~ 4950 2100
-Wire Wire Line
-	8100 2650 7250 2650
 $Comp
 L R R17
 U 1 1 59FFE442
@@ -268,8 +265,6 @@ F 3 "" H 5450 2200 50  0001 C CNN
 	1    5450 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 4800 6400 4800
 Wire Wire Line
 	2850 4800 3150 4800
 Wire Wire Line
@@ -354,4 +349,34 @@ F 3 "" H 6700 5750 60  0001 C CNN
 	1    6700 5750
 	-1   0    0    -1  
 $EndComp
+$Comp
+L R 0ohms
+U 1 1 5A03279B
+P 7200 4800
+F 0 "0ohms" V 7280 4800 50  0000 C CNN
+F 1 "R" V 7200 4800 50  0000 C CNN
+F 2 "" V 7130 4800 50  0001 C CNN
+F 3 "" H 7200 4800 50  0001 C CNN
+	1    7200 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L R 0ohms
+U 1 1 5A032888
+P 7700 2650
+F 0 "0ohms" V 7780 2650 50  0000 C CNN
+F 1 "R" V 7700 2650 50  0000 C CNN
+F 2 "" V 7630 2650 50  0001 C CNN
+F 3 "" H 7700 2650 50  0001 C CNN
+	1    7700 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 4800 7350 4800
+Wire Wire Line
+	6400 4800 7050 4800
+Wire Wire Line
+	7550 2650 7250 2650
+Wire Wire Line
+	8100 2650 7850 2650
 $EndSCHEMATC
