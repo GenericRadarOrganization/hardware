@@ -8,8 +8,8 @@
     (drawings 5)
     (tracks 61)
     (zones 0)
-    (modules 48)
-    (nets 42)
+    (modules 50)
+    (nets 44)
   )
 
   (page A4)
@@ -136,6 +136,8 @@
   (net 39 "Net-(U11-Pad2)")
   (net 40 "Net-(C4-Pad1)")
   (net 41 "Net-(U3-Pad1)")
+  (net 42 "Net-(U13-Pad1)")
+  (net 43 "Net-(U14-Pad1)")
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -181,6 +183,8 @@
     (add_net "Net-(R6-Pad1)")
     (add_net "Net-(R6-Pad2)")
     (add_net "Net-(U11-Pad2)")
+    (add_net "Net-(U13-Pad1)")
+    (add_net "Net-(U14-Pad1)")
     (add_net "Net-(U3-Pad1)")
     (add_net "Net-(VCO1-Pad4)")
     (add_net PowerSplitter)
@@ -1259,6 +1263,40 @@
       (net 40 "Net-(C4-Pad1)"))
     (pad 1 smd rect (at -8.3058 7.62) (size 2.54 2.54) (layers F.Cu F.Paste F.Mask)
       (net 41 "Net-(U3-Pad1)"))
+  )
+
+  (module RadarComponents:patch58 (layer F.Cu) (tedit 5A0350F5) (tstamp 5A0353EE)
+    (at 116.1034 187.3377 270)
+    (path /59EFF5D2/59FFCB61)
+    (fp_text reference U13 (at -5.5372 -8.7122 270) (layer F.SilkS) hide
+      (effects (font (thickness 0.3)))
+    )
+    (fp_text value Antenna111 (at 1.0414 -8.636 270) (layer F.SilkS) hide
+      (effects (font (thickness 0.3)))
+    )
+    (fp_poly (pts (xy 4.148667 3.217333) (xy -8.043333 3.217333) (xy -8.043333 -0.338667) (xy -3.217333 -0.338667)
+      (xy -3.217333 -0.846667) (xy -9.313333 -0.846667) (xy -9.313333 -3.386667) (xy -3.217333 -3.386667)
+      (xy -3.217333 -3.894667) (xy -8.043333 -3.894667) (xy -8.043333 -7.450667) (xy 4.148667 -7.450667)
+      (xy 4.148667 3.217333)) (layer F.Cu) (width 0.01))
+    (pad 1 smd rect (at -8.0518 -2.1082 270) (size 2.5146 2.5146) (layers F.Cu F.Paste F.Mask)
+      (net 42 "Net-(U13-Pad1)"))
+  )
+
+  (module RadarComponents:patch58 (layer F.Cu) (tedit 5A0350F5) (tstamp 5A0353F4)
+    (at 146.05 187.875001 270)
+    (path /59EFF5D2/59FFCBF8)
+    (fp_text reference U14 (at -5.5372 -8.7122 270) (layer F.SilkS) hide
+      (effects (font (thickness 0.3)))
+    )
+    (fp_text value Antenna111 (at 1.0414 -8.636 270) (layer F.SilkS) hide
+      (effects (font (thickness 0.3)))
+    )
+    (fp_poly (pts (xy 4.148667 3.217333) (xy -8.043333 3.217333) (xy -8.043333 -0.338667) (xy -3.217333 -0.338667)
+      (xy -3.217333 -0.846667) (xy -9.313333 -0.846667) (xy -9.313333 -3.386667) (xy -3.217333 -3.386667)
+      (xy -3.217333 -3.894667) (xy -8.043333 -3.894667) (xy -8.043333 -7.450667) (xy 4.148667 -7.450667)
+      (xy 4.148667 3.217333)) (layer F.Cu) (width 0.01))
+    (pad 1 smd rect (at -8.0518 -2.1082 270) (size 2.5146 2.5146) (layers F.Cu F.Paste F.Mask)
+      (net 43 "Net-(U14-Pad1)"))
   )
 
   (gr_line (start 96.52 177.8) (end 93.98 177.8) (angle 90) (layer Edge.Cuts) (width 0.15))
