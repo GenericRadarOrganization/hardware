@@ -76,6 +76,8 @@ $Comp
 L GALI-2+ U10
 U 1 1 59FF6FBF
 P 4050 2650
+AR Path="/59FF6FBF" Ref="U10"  Part="1" 
+AR Path="/59EFF5D2/59FF6FBF" Ref="U10"  Part="1" 
 F 0 "U10" H 4450 3200 60  0000 C CNN
 F 1 "GALI-2+" H 3750 3200 60  0000 C CNN
 F 2 "RadarComponents:Amplifier" H 4050 2650 60  0001 C CNN
@@ -98,6 +100,8 @@ $Comp
 L BandpassFilter U11
 U 1 1 59FF71CB
 P 5650 3600
+AR Path="/59FF71CB" Ref="U11"  Part="1" 
+AR Path="/59EFF5D2/59FF71CB" Ref="U11"  Part="1" 
 F 0 "U11" H 7000 5100 60  0000 C CNN
 F 1 "BandpassFilter" H 6450 5000 60  0000 C CNN
 F 2 "RadarComponents:DoubleFilter" H 5650 3600 60  0001 C CNN
@@ -109,6 +113,8 @@ $Comp
 L LEE-39+ U9
 U 1 1 59FFC0B0
 P 3850 4800
+AR Path="/59FFC0B0" Ref="U9"  Part="1" 
+AR Path="/59EFF5D2/59FFC0B0" Ref="U9"  Part="1" 
 F 0 "U9" H 4250 5350 60  0000 C CNN
 F 1 "LEE-39+" H 3550 5350 60  0000 C CNN
 F 2 "RadarComponents:Amplifier" H 3850 4800 60  0001 C CNN
@@ -330,6 +336,8 @@ $Comp
 L BandpassFilter U3
 U 1 1 5A02863C
 P 6700 5750
+AR Path="/5A02863C" Ref="U3"  Part="1" 
+AR Path="/59EFF5D2/5A02863C" Ref="U3"  Part="1" 
 F 0 "U3" H 8000 7200 60  0000 C CNN
 F 1 "BandpassFilter" H 7550 7200 60  0000 C CNN
 F 2 "RadarComponents:QuadPoleFilter" H 6700 5750 60  0001 C CNN
