@@ -65,10 +65,10 @@ U 1 1 59FF6B4C
 P 5300 2100
 F 0 "C13" H 5325 2200 50  0000 L CNN
 F 1 "150p" H 5325 2000 50  0000 L CNN
-F 2 "RadarComponents:100PAD" H 5338 1950 50  0001 C CNN
+F 2 "RadarComponents:100PAD+GND" H 5338 1950 50  0001 C CNN
 F 3 "" H 5300 2100 50  0001 C CNN
 	1    5300 2100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L GALI-2+ U10
@@ -181,7 +181,7 @@ U 1 1 59FFDD37
 P 4950 2450
 F 0 "R18" V 5030 2450 50  0000 C CNN
 F 1 "75" V 4950 2450 50  0000 C CNN
-F 2 "RadarComponents:100PAD+GND2" V 4880 2450 50  0001 C CNN
+F 2 "RadarComponents:100PAD+GND" V 4880 2450 50  0001 C CNN
 F 3 "" H 4950 2450 50  0001 C CNN
 	1    4950 2450
 	1    0    0    -1  
@@ -286,7 +286,7 @@ AR Path="/5A02863C" Ref="U3"  Part="1"
 AR Path="/59EFF5D2/5A02863C" Ref="U3"  Part="1" 
 F 0 "U3" H 8000 7200 60  0000 C CNN
 F 1 "BandpassFilter" H 7550 7200 60  0000 C CNN
-F 2 "RadarComponents:QuadPoleFilter" H 6700 5750 60  0001 C CNN
+F 2 "RadarComponents:QuadPoleFilterMirror" H 6700 5750 60  0001 C CNN
 F 3 "" H 6700 5750 60  0001 C CNN
 	1    6700 5750
 	-1   0    0    -1  
