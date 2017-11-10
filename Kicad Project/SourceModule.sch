@@ -882,4 +882,26 @@ Text Notes 2750 4800 0    60   ~ 0
 3.3V from Teensy
 Text Notes 2750 5400 0    60   ~ 0
 5V from Regulator to Teensy
+$Comp
+L Conn_01x02 J7
+U 1 1 5A051D07
+P 1300 2900
+F 0 "J7" H 1300 3000 50  0000 C CNN
+F 1 "Conn_01x02" H 1300 2700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch1.27mm" H 1300 2900 50  0001 C CNN
+F 3 "" H 1300 2900 50  0001 C CNN
+	1    1300 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR047
+U 1 1 5A051D90
+P 1500 2900
+F 0 "#PWR047" H 1500 2650 50  0001 C CNN
+F 1 "GND" H 1500 2750 50  0000 C CNN
+F 2 "" H 1500 2900 50  0001 C CNN
+F 3 "" H 1500 2900 50  0001 C CNN
+	1    1500 2900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
