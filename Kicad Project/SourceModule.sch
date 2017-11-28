@@ -251,11 +251,11 @@ Text Notes 8650 5600 0    60   ~ 0
 Text Notes 3350 2050 0    60   ~ 0
 -3dBm
 $Comp
-L GALI-2+-RESCUE-Radar U6
+L LEE-39+ U6
 U 1 1 59F9E96F
 P 4750 2200
 F 0 "U6" H 5150 2750 60  0000 C CNN
-F 1 "GALI-2+" H 4450 2750 60  0000 C CNN
+F 1 "LEE-39+" H 4450 2750 60  0000 C CNN
 F 2 "RadarComponents:Amplifier" H 4750 2200 60  0001 C CNN
 F 3 "" H 4750 2200 60  0001 C CNN
 	1    4750 2200
@@ -852,8 +852,6 @@ Text Label 1750 4050 0    60   ~ 0
 VCOTune
 Text Label 1750 4150 0    60   ~ 0
 VCOENABLE
-Text Label 1750 4250 0    60   ~ 0
-AudioOut
 Wire Wire Line
 	6600 2200 5850 2200
 Text Notes 4850 5550 0    60   ~ 0
@@ -913,4 +911,6 @@ Text Label 900  2200 2    60   ~ 0
 VCOTune
 Text Label 1500 2800 2    60   ~ 0
 VCOENABLE
+Text GLabel 1750 4250 2    60   Input ~ 0
+AudioOut
 $EndSCHEMATC

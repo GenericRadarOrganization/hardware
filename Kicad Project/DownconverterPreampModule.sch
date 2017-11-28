@@ -487,6 +487,6 @@ Wire Wire Line
 	9525 1200 9525 1300
 Wire Wire Line
 	9525 1300 9700 1300
-Text Label 8250 975  0    60   ~ 0
+Text GLabel 7950 1000 0    60   Input ~ 0
 AudioOut
 $EndSCHEMATC
