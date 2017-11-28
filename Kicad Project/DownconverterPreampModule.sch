@@ -267,8 +267,8 @@ Wire Wire Line
 	7950 2275 8250 2275
 Wire Wire Line
 	7950 975  7950 2275
-Text Notes 9350 925  0    60   ~ 0
-OUT
+Text Notes 9175 775  0    60   ~ 0
+LR Audio
 $Comp
 L R R6
 U 1 1 5A0393BC
@@ -404,31 +404,18 @@ Wire Wire Line
 Wire Wire Line
 	7850 2875 8250 2875
 $Comp
-L Conn_01x02 J6
-U 1 1 5A0523B7
-P 9150 1075
-F 0 "J6" H 9150 1175 50  0000 C CNN
-F 1 "Conn_01x02" H 9150 875 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch1.27mm" H 9150 1075 50  0001 C CNN
-F 3 "" H 9150 1075 50  0001 C CNN
-	1    9150 1075
-	1    0    0    1   
-$EndComp
-$Comp
 L GND #PWR09
 U 1 1 5A05247F
-P 8950 1175
-F 0 "#PWR09" H 8950 925 50  0001 C CNN
-F 1 "GND" H 8950 1025 50  0000 C CNN
-F 2 "" H 8950 1175 50  0001 C CNN
-F 3 "" H 8950 1175 50  0001 C CNN
-	1    8950 1175
+P 9525 1300
+F 0 "#PWR09" H 9525 1050 50  0001 C CNN
+F 1 "GND" H 9525 1150 50  0000 C CNN
+F 2 "" H 9525 1300 50  0001 C CNN
+F 3 "" H 9525 1300 50  0001 C CNN
+	1    9525 1300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7950 975  8950 975 
-Wire Wire Line
-	8950 1075 8950 1175
 $Comp
 L +3.3V #PWR010
 U 1 1 5A06409C
@@ -468,4 +455,38 @@ Wire Wire Line
 	6175 3275 6525 3275
 Wire Wire Line
 	6525 3275 6525 3675
+$Comp
+L JACK_TRS_6PINS J1
+U 1 1 5A1D11CD
+P 10100 1000
+F 0 "J1" H 10100 1400 50  0000 C CNN
+F 1 "JACK_TRS_6PINS" H 10050 700 50  0000 C CNN
+F 2 "RadarComponents:3.5mm_SMD" H 10200 850 50  0001 C CNN
+F 3 "" H 10200 850 50  0001 C CNN
+	1    10100 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8950 975  8950 800 
+Wire Wire Line
+	8950 800  9700 800 
+Wire Wire Line
+	9700 900  9625 900 
+Wire Wire Line
+	9625 800  9625 1100
+Connection ~ 9625 800 
+Wire Wire Line
+	9625 1000 9700 1000
+Connection ~ 9625 900 
+Wire Wire Line
+	9625 1100 9700 1100
+Connection ~ 9625 1000
+Wire Wire Line
+	9700 1200 9525 1200
+Wire Wire Line
+	9525 1200 9525 1300
+Wire Wire Line
+	9525 1300 9700 1300
+Text Label 8250 975  0    60   ~ 0
+AudioOut
 $EndSCHEMATC

@@ -132,17 +132,6 @@ F 3 "" H 2650 4200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C14
-U 1 1 59FFC68E
-P 5300 2650
-F 0 "C14" H 5325 2750 50  0000 L CNN
-F 1 "100n" H 5325 2550 50  0000 L CNN
-F 2 "RadarComponents:100PAD" H 5338 2500 50  0001 C CNN
-F 3 "" H 5300 2650 50  0001 C CNN
-	1    5300 2650
-	0    1    1    0   
-$EndComp
-$Comp
 L C C10
 U 1 1 59FFC719
 P 2700 4800
@@ -292,28 +281,6 @@ F 3 "" H 6700 5750 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R 0ohms1
-U 1 1 5A03279B
-P 7200 4800
-F 0 "0ohms1" V 7280 4800 50  0000 C CNN
-F 1 "R" V 7200 4800 50  0000 C CNN
-F 2 "RadarComponents:100PAD" V 7130 4800 50  0001 C CNN
-F 3 "" H 7200 4800 50  0001 C CNN
-	1    7200 4800
-	0    1    1    0   
-$EndComp
-$Comp
-L R 0ohms2
-U 1 1 5A032888
-P 7700 2650
-F 0 "0ohms2" V 7780 2650 50  0000 C CNN
-F 1 "R" V 7700 2650 50  0000 C CNN
-F 2 "RadarComponents:100PAD" V 7630 2650 50  0001 C CNN
-F 3 "" H 7700 2650 50  0001 C CNN
-	1    7700 2650
-	0    1    1    0   
-$EndComp
-$Comp
 L ufl U15
 U 1 1 5A0330EA
 P 7500 3400
@@ -362,9 +329,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 2650 3350 2650
 Wire Wire Line
-	4750 2650 5150 2650
-Wire Wire Line
-	5450 2650 5950 2650
+	4750 2650 5950 2650
 Wire Wire Line
 	4950 2600 4950 2650
 Connection ~ 4950 2650
@@ -411,16 +376,16 @@ Wire Wire Line
 	4550 4800 5100 4800
 Wire Wire Line
 	7950 5800 7950 5750
-Wire Wire Line
-	7450 3150 7450 2650
 Connection ~ 7450 2650
-Wire Wire Line
-	7500 5400 6900 5400
-Wire Wire Line
-	6900 5400 6900 4800
-Connection ~ 6900 4800
 Wire Wire Line
 	6400 4800 8100 4800
 Wire Wire Line
 	8100 2650 7250 2650
+Wire Wire Line
+	7450 2650 7450 3150
+Wire Wire Line
+	7500 5400 7300 5400
+Wire Wire Line
+	7300 5400 7300 4800
+Connection ~ 7300 4800
 $EndSCHEMATC
